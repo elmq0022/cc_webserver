@@ -1,0 +1,10 @@
+version: '1'
+services:
+  http-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    stdin_open: true
+    tty: true

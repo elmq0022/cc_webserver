@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cc-webserver"
+version = "0.0.1"
+dependencies = []
+requires-python = ">= 3.12"
+authors = [
+  {name = "Aaron Elmquist"},
+]
+description = "Basic Implementation of an http server"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["http", "server", "sockets", "wsgi"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-docker",
+]
+
+[project.urls]
+Repository = "https://github.com/elmq0022/cc-webserver"
